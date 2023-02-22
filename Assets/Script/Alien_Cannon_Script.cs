@@ -6,7 +6,7 @@ public class Alien_Cannon_Script : MonoBehaviour
     public GameObject Alien_Bullet;
     public Transform Alien_Cannon;
 
-    void FixedUpdate()
+    void Update()
     {
         bool Alien_shoot = Input.GetButtonDown("Alien_Fire");
 

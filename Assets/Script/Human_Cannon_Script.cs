@@ -6,7 +6,7 @@ public class Human_Cannon_Script : MonoBehaviour
     public GameObject Human_Bullet;
     public Transform Human_Cannon;
 
-    void FixedUpdate ()
+    void Update ()
     {
         bool Human_shoot = Input.GetButtonDown("Human_Fire");
 
