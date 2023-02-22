@@ -639,6 +639,7 @@ GameObject:
   - component: {fileID: 1195347364}
   - component: {fileID: 1195347366}
   - component: {fileID: 1195347367}
+  - component: {fileID: 1195347368}
   m_Layer: 0
   m_Name: Alien_Ship
   m_TagString: Untagged
@@ -709,7 +710,8 @@ Transform:
   m_LocalPosition: {x: 6.29, y: -0.45, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1544944249}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
@@ -738,6 +740,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 693328a9fc0e34c598287a0bdfbd66be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1195347368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195347363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759be90b19b24034aab7ef64c2630204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Alien_Bullet: {fileID: 7143380331262809942, guid: a24a3769c3fc01c459d5c727b0dd39ee, type: 3}
+  Alien_Cannon: {fileID: 1544944249}
 --- !u!1 &1532798729
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,6 +838,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1544944248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1544944249}
+  - component: {fileID: 1544944250}
+  m_Layer: 0
+  m_Name: Alien_Cannon
+  m_TagString: Alien_FirePoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1544944249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544944248}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1195347365}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1544944250
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544944248}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1595544408
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,6 +1024,7 @@ GameObject:
   - component: {fileID: 1710529490}
   - component: {fileID: 1710529489}
   - component: {fileID: 1710529492}
+  - component: {fileID: 1710529493}
   m_Layer: 0
   m_Name: Human_Ship
   m_TagString: Untagged
@@ -1050,6 +1125,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cb97452da9f455aad565bed2f296bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1710529493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710529488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9065d8978233ee47ae216c5cb8d3698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Human_Bullet: {fileID: 5839252856932220258, guid: 4e46a4f4d84134e4f850b31785abb7d3, type: 3}
+  Human_Cannon: {fileID: 1859456041}
 --- !u!1 &1774670572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,9 +1264,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1859456041}
+  - component: {fileID: 1859456042}
   m_Layer: 0
   m_Name: Human_Cannon
-  m_TagString: Untagged
+  m_TagString: Human_FirePoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1190,10 +1280,36 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859456040}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.01, y: 1.43, z: -0.11148375}
+  m_LocalPosition: {x: -0.01, y: 1.53, z: -0.11148375}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1710529491}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1859456042
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859456040}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
