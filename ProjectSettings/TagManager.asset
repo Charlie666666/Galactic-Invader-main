@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Human_FirePoint
   - Alien_FirePoint
+  - Human_Ship
+  - Alien_Ship
+  - Alien_Bullet
+  - Human_Bullet
   layers:
   - Default
   - TransparentFX

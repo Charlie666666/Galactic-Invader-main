@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5441026962955551856}
   m_Layer: 0
   m_Name: Human_Bullet
-  m_TagString: Untagged
+  m_TagString: Human_Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210ef874d7af87b4ba6f9489e164c3da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletForce: 750
+  Human_bulletForce: 750
 --- !u!50 &-5441026962955551856
 Rigidbody2D:
   serializedVersion: 4
