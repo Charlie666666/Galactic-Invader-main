@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Human_Health_Controller : MonoBehaviour
 {
     public int Human_HP;
     public GameObject Human_Bullet;
     public Transform Human_Cannon;
+    public void Alien_Victory()
+    {
+        SceneManager.LoadScene("Alien_Victory_Scene");//Find a screen for this
+    }
 
     [SerializeField] private Image[] hearts;
 
@@ -35,6 +40,10 @@ public class Human_Health_Controller : MonoBehaviour
             else
             {
                 hearts[i].color = Color.black;
+                if (Human_HP < 1)
+                {
+                    Alien_Victory();
+                }
             }
         }
     }
