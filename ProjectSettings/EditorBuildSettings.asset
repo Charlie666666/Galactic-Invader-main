@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Human_Victory_Scene.unity
     guid: 2ebf4c3325a3c40438a87148fe0673c7
+  - enabled: 0
+    path: Assets/Scenes/Introduction.unity
+    guid: d27a7640123f244a0be7eeae227ef05f
   m_configObjects: {}
