@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-using UnityEngine;
 
 public class Alien_Ship_Controller : MonoBehaviour
 {
