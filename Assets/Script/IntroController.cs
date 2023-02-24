@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class IntroductionButton : MonoBehaviour
+public class IntroController : MonoBehaviour
 {
     public void PlayGame() {
         
-        SceneManager.LoadScene("Introduction");
+     SceneManager.LoadScene("Introduction");
+     
     }
     
     
