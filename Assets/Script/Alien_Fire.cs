@@ -9,5 +9,6 @@ public class Alien_Fire : MonoBehaviour
     void OnTriggerEnter2D(Collider2D Alien_target)
     {
         if (Alien_target.gameObject.tag == "Alien_FirePoint") GetComponent<Rigidbody2D>().AddForce(transform.right * -1 * Alien_bulletForce);
+       
     }
 }

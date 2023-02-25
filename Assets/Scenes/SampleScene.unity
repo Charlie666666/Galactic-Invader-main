@@ -220,7 +220,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3e793a7a35c5a4164848df73a644d1e3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.386
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -845,6 +845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Alien_Bullet: {fileID: 7143380331262809942, guid: a24a3769c3fc01c459d5c727b0dd39ee, type: 3}
   Alien_Cannon: {fileID: 1544944249}
+  shootSound: {fileID: 0}
 --- !u!114 &1195347369
 MonoBehaviour:
   m_ObjectHideFlags: 0
