@@ -160,4 +160,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc87df597c6651a49aefa355a2052459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Alien_bulletForce: 750
+  Alien_bulletForce: 500
